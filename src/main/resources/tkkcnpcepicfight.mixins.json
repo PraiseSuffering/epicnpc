@@ -1,0 +1,20 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"compatibilityLevel": "JAVA_8",
+	"package": "com.tkk.npcepicfight.mixin",
+	"client": [
+		"MixinEpicFlightWardrobeHandler",
+		"MixinPatchedLivingEntityRenderer",
+		"MixinRenderEngine"
+	],
+	"mixins": [
+		"MixinBasicAttackAnimation",
+		"MxinAttackAnimator",
+		"MixinEntityNPCInterface"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"refmap": "npcepicfight.mixins.refmap.json"
+}
